@@ -1,2 +1,3 @@
 # AndroidManifestAdder
-在Android打时候在清单文件中动态插入代码
+在Android打包时候在清单文件中动态插入四大组件,升级到gradle插件版本7.3.0
+- provider因为初始化原因暂时不能添加会报错
