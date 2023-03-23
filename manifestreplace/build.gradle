@@ -1,0 +1,43 @@
+
+plugins{
+    id 'java-library'
+    id 'kotlin'
+    id 'groovy'
+    id 'maven-publish'
+}
+
+
+
+
+dependencies {
+    implementation gradleApi()
+    implementation localGroovy()
+    implementation 'com.android.tools.build:gradle:7.3.0'
+    implementation 'org.codehaus.groovy:groovy:3.0.10'
+    implementation 'org.redundent:kotlin-xml-builder:1.4'
+}
+
+
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = 'com.myl.manifest'
+            artifactId = 'manifestplugin'
+            version = '1.0.1'
+
+            from components.java
+        }
+    }
+    repositories {
+        maven {
+            url = "../repo"//本地仓库路径，放到项目根目录下的 repo 的文件夹
+        }
+    }
+}
+
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}

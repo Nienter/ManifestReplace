@@ -1,0 +1,103 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.myl.manifest",
+    "module": "manifestplugin",
+    "version": "1.0.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.5"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.8.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "manifestplugin-1.0.1.jar",
+          "url": "manifestplugin-1.0.1.jar",
+          "size": 21393,
+          "sha512": "5a61c70d679570e6da232a5c7fd33ed518acabf309dd9632eea23d9f8b5078be41777b05f39b0a9a0ed7e0e725b0192d8331d725f24bc8c0ecd60d67beec4aa9",
+          "sha256": "071c077241d5a426070a135156914f3317355ac73479b28420a38addffa848ad",
+          "sha1": "f9d7009fea80a26aa30ef5945a42a84f45ddd9ca",
+          "md5": "ae3135f66ede0fa086ef2aef37affd0a"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.android.tools.build",
+          "module": "gradle",
+          "version": {
+            "requires": "7.3.0"
+          }
+        },
+        {
+          "group": "org.codehaus.groovy",
+          "module": "groovy",
+          "version": {
+            "requires": "3.0.10"
+          }
+        },
+        {
+          "group": "org.redundent",
+          "module": "kotlin-xml-builder",
+          "version": {
+            "requires": "1.4"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.8.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "manifestplugin-1.0.1.jar",
+          "url": "manifestplugin-1.0.1.jar",
+          "size": 21393,
+          "sha512": "5a61c70d679570e6da232a5c7fd33ed518acabf309dd9632eea23d9f8b5078be41777b05f39b0a9a0ed7e0e725b0192d8331d725f24bc8c0ecd60d67beec4aa9",
+          "sha256": "071c077241d5a426070a135156914f3317355ac73479b28420a38addffa848ad",
+          "sha1": "f9d7009fea80a26aa30ef5945a42a84f45ddd9ca",
+          "md5": "ae3135f66ede0fa086ef2aef37affd0a"
+        }
+      ]
+    }
+  ]
+}
